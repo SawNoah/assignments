@@ -13,7 +13,7 @@ function Info($myWeight,$myHeight,$BMI)
     echo "<br/>";
     echo "Your BMI is : $BMI.\n";
     echo "<br/>";
-    break;
+    return;
 }
 function Status($BMI)
 {
@@ -38,6 +38,6 @@ function Status($BMI)
         echo "You are Extremely Obese.\n";
     }
     echo "<br/>";
-break;            
+    return;            
 }
 ?>
