@@ -1,9 +1,12 @@
 <?php
-//Calculating BMI
+//Calculating BMI using pound and inches
+//with functions
 
 $myWeight = 153;
 $myHeight = 68;
-$BMI = 703 * $myWeight/ ($myHeight)^2;
+$BMI = 703 * $myWeight/ ($myHeight * $myHeight);
+Info($myHeight,$myWeight,$BMI);
+Status($BMI);
 
 function Info($myWeight,$myHeight,$BMI)
 {
