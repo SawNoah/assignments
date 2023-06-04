@@ -5,7 +5,7 @@ $myWeight = 153;
 $myHeight = 68;
 $BMI = 703 * $myWeight/ ($myHeight)^2;
 
-function Info()
+function Info($myWeight,$myHeight,$BMI)
 {
     echo "Your Weight(lb) is : $myWeight.\n";
     echo "<br/>";
@@ -15,7 +15,7 @@ function Info()
     echo "<br/>";
     break;
 }
-function Status()
+function Status($BMI)
 {
     if ($BMI < 18.5)
     {
