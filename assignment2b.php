@@ -38,6 +38,22 @@ class Information
     {
         $this->age = $age;
         echo " is $this->age years old. <br>";
+        if ($this->age < 12)
+        {
+            echo "Minimum age 12 is required to join the school. <br>";
+        }
+        elseif (12 <= $this->age <15)
+        {
+            echo "Assign to Classroom No.1.<br>";
+        }
+        elseif (15 <= $this->age <18)
+        {
+            echo "Assign to Classroom No.2.<br>";
+        }
+        else
+        {
+            echo "Over the age 18 is unable to join the school.<br>";
+        }
     }
 }
 
